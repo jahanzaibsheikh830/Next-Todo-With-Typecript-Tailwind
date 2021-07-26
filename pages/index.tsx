@@ -13,10 +13,10 @@ export default function Home() {
   return (
     <div className='container mx-auto'>
       <div>
-        <div className='text-center text-4xl mb-5'>
-          <p className='text-gray'>Todo</p>
+        <div className='todo_heading'>
+          <p className='text_color'>Todo</p>
         </div>
-        <div>
+        <div className='mb-5'>
           <form onSubmit={addTodo}>
             <TextField
               setTodo={(e: any) => setTodo(e.target.value)}
@@ -24,7 +24,7 @@ export default function Home() {
               type='text'
               placeholder='Type something'
             />
-            <Btn name='add' width='w-3/12' padding='py-1 px-4' />
+            <Btn name='add' width='w-3/12' padding='py-2 px-4' />
           </form>
         </div>
         <div>

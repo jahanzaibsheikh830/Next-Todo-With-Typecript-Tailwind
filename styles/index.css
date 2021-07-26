@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.todo_heading {
+  text-align: center;
+  margin-bottom: 50;
+}
+.text_color {
+  color: green;
+  font-size: 28px;
+  font-weight: bold;
+}
+.text_field {
+  width: 75%;
+  padding: 7px 10px;
+  box-shadow: 0 0 3px grey;
+  outline: none;
+}
+.btn_big {
+  width: 25%;
+  background-color: green;
+  color: #fff;
+  padding: 8px;
+  text-transform: capitalize;
+}
+.btn_small {
+  background-color: green;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  text-transform: capitalize;
+}

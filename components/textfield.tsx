@@ -7,7 +7,7 @@ interface Todosprops {
 function TextField({ setTodo, value, placeholder, type }: Todosprops) {
   return (
     <input
-      className='shadow appearance-none border w-9/12 rounded py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+      className='text_field'
       type={type}
       placeholder={placeholder}
       required

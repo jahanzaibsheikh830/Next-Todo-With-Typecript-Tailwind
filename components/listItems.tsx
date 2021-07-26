@@ -34,7 +34,7 @@ function ListItem({ todos, setTodosItem }: Todosprops) {
                 <span className='mr-2'>
                   <Btn
                     name='delete'
-                    padding='py-1 px-2'
+                    padding='py-2 px-2'
                     text='text-xs'
                     deleteTodo={() => del(i)}
                   />
@@ -42,7 +42,7 @@ function ListItem({ todos, setTodosItem }: Todosprops) {
                 <span>
                   <Btn
                     name='update'
-                    padding='py-1 px-2'
+                    padding='py-2 px-2'
                     text='text-xs'
                     updateTodo={() => updt(i, todoItem)}
                   />

@@ -17,9 +17,10 @@ function Button({
   return (
     <button
       onClick={deleteTodo ? deleteTodo : updateTodo}
-      className={`bg-blue-500 hover:bg-blue-700 ${
-        width ? width : ""
-      } text-white  ${padding} ${text} rounded `}
+      className={` ${name === "add" ? "btn_big" : "btn_small"}`}
+      // className={`bg-blue-500 hover:bg-blue-700 ${
+      //   width ? width : ""
+      // } text-white  ${padding} ${text} rounded `}
     >
       {name}
     </button>
