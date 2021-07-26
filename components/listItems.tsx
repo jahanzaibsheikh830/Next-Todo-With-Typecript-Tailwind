@@ -8,8 +8,9 @@ function ListItem({ todos, setTodosItem }: Todosprops) {
   function del(i: number) {
     setTodosItem((prev) => prev.filter((item, idx) => idx !== i));
   }
-  function updt(i: number, v: string) {
-    const updateTodoInput: string = prompt("Please enter new todo", v) || "";
+  function updt(i: number, todoItem: string) {
+    const updateTodoInput: string =
+      prompt("Please enter new todo", todoItem) || "";
     setTodosItem((prev) =>
       prev.filter((item, idx) => {
         if (idx === i) {
@@ -23,11 +24,11 @@ function ListItem({ todos, setTodosItem }: Todosprops) {
   return (
     <div>
       {todos &&
-        todos?.map((v, i) => {
+        todos?.map((todoItem, i) => {
           return (
             <div key={i} className='flex justify-between mb-3'>
               <div>
-                <h2>{v}</h2>
+                <h2>{todoItem}</h2>
               </div>
               <div>
                 <span className='mr-2'>
@@ -43,7 +44,7 @@ function ListItem({ todos, setTodosItem }: Todosprops) {
                     name='update'
                     padding='py-1 px-2'
                     text='text-xs'
-                    updateTodo={() => updt(i, v)}
+                    updateTodo={() => updt(i, todoItem)}
                   />
                 </span>
               </div>
