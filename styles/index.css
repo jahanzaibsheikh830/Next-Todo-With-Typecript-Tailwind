@@ -1,33 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.todo_heading {
-  text-align: center;
-  margin-bottom: 50;
-}
-.text_color {
-  color: green;
-  font-size: 28px;
-  font-weight: bold;
-}
-.text_field {
-  width: 75%;
-  padding: 7px 10px;
-  box-shadow: 0 0 3px grey;
-  outline: none;
-}
-.btn_big {
-  width: 25%;
-  background-color: green;
-  color: #fff;
-  padding: 8px;
-  text-transform: capitalize;
-}
-.btn_small {
-  background-color: green;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 10px;
-  font-size: 12px;
-  text-transform: capitalize;
+
+@layer base {
+  .main {
+    @apply w-96 ml-auto mr-auto mt-0 mb-0 max-w-full p-5;
+  }
+  .todo_heading {
+    @apply text-center mb-5;
+  }
+  .text_color {
+    @apply text-green-500 text-4xl font-bold;
+  }
+  .text_field {
+    @apply w-3/4 p-2 shadow outline-none;
+  }
+  .text_field_update {
+    @apply w-3/4 p-2 outline-none bg-white;
+  }
+  .btn_big {
+    @apply w-1/4	bg-green-500 text-white p-2 capitalize;
+  }
+  .btn_small {
+    @apply bg-green-500 text-white p-2 rounded text-xs capitalize;
+  }
 }
