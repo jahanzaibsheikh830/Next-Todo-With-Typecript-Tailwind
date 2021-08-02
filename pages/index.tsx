@@ -11,7 +11,7 @@ export default function Home() {
     setTodo("");
   }
   return (
-    <div className='container mx-auto'>
+    <div className='main'>
       <div>
         <div className='todo_heading'>
           <p className='text_color'>Todo</p>
@@ -24,7 +24,7 @@ export default function Home() {
               type='text'
               placeholder='Type something'
             />
-            <Btn name='add' width='w-3/12' padding='py-2 px-4' />
+            <Btn name='add' />
           </form>
         </div>
         <div>

@@ -1,26 +1,15 @@
 interface ButtonProps {
   name?: string;
-  width?: string;
-  padding?: string;
-  text?: string;
   deleteTodo?: () => void;
   updateTodo?: () => void;
 }
-function Button({
-  name,
-  width,
-  padding,
-  text,
-  deleteTodo,
-  updateTodo,
-}: ButtonProps) {
+function Button({ name, deleteTodo, updateTodo }: ButtonProps) {
   return (
     <button
       onClick={deleteTodo ? deleteTodo : updateTodo}
-      className={` ${name === "add" ? "btn_big" : "btn_small"}`}
-      // className={`bg-blue-500 hover:bg-blue-700 ${
-      //   width ? width : ""
-      // } text-white  ${padding} ${text} rounded `}
+      className={` ${
+        name === "add" || name === "update" ? "btn_big" : "btn_small"
+      }`}
     >
       {name}
     </button>
