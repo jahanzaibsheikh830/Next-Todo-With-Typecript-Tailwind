@@ -5,6 +5,10 @@ interface Todosprops {
   todos: string[];
   setTodosItem: (value: React.SetStateAction<string[]>) => void;
 }
+
+
+
+
 function ListItem({ todos, setTodosItem }: Todosprops) {
   const [isTrue, setIsTrue] = useState(false);
   const [updateTodoInput, setUpdateTodoInput] = useState("");
